@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-import sys
-import pkgutil
 import importlib
-from typing import Dict
-from rosetta_browser.core.engine import BrowserEngine
+import pkgutil
+import sys
+
 from rosetta_browser import engines
 from rosetta_browser.cli import parse_args
+from rosetta_browser.core.engine import BrowserEngine
 from rosetta_browser.features.extension_rosetta import ExtensionRosetta
 
 # Registry for browser engines
-ENGINE_REGISTRY: Dict[str, BrowserEngine] = {}
+ENGINE_REGISTRY: dict[str, BrowserEngine] = {}
 
 def register_engine(engine: BrowserEngine):
     ENGINE_REGISTRY[engine.name] = engine

@@ -1,5 +1,5 @@
 import argparse
-import sys
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Rosetta-Browser: Cross-Engine Browser Data Migration Tool")

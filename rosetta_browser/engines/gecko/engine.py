@@ -1,4 +1,5 @@
-from rosetta_browser.core.engine import BrowserEngine, BrowserData
+from rosetta_browser.core.engine import BrowserData, BrowserEngine
+
 
 class GeckoEngine(BrowserEngine):
     @property

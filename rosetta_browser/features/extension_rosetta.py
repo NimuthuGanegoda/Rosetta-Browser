@@ -1,5 +1,7 @@
-from typing import List, Dict, Any, Optional
+from typing import Any
+
 from rosetta_browser.core.engine import ExtensionData
+
 
 class ExtensionRosetta:
     """
@@ -10,7 +12,7 @@ class ExtensionRosetta:
         # Placeholder for database or mapping logic
         self._mapping_cache = {}
 
-    def translate_extensions(self, source_extensions: List[ExtensionData], target_engine: str) -> List[Dict[str, Any]]:
+    def translate_extensions(self, source_extensions: list[ExtensionData], target_engine: str) -> list[dict[str, Any]]:
         """
         Takes a list of source extensions and returns a list of recommended add-ons
         for the target browser engine.
@@ -22,7 +24,7 @@ class ExtensionRosetta:
                 recommendations.append(rec)
         return recommendations
 
-    def _find_equivalent(self, extension: ExtensionData, target_engine: str) -> Optional[Dict[str, Any]]:
+    def _find_equivalent(self, extension: ExtensionData, target_engine: str) -> dict[str, Any] | None:
         """
         Finds the equivalent extension in the target engine's store.
         """

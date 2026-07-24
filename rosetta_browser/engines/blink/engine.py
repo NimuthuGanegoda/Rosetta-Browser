@@ -1,4 +1,5 @@
-from rosetta_browser.core.engine import BrowserEngine, BrowserData, ExtensionData
+from rosetta_browser.core.engine import BrowserData, BrowserEngine, ExtensionData
+
 
 class BlinkEngine(BrowserEngine):
     @property

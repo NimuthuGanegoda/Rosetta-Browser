@@ -1,5 +1,7 @@
 import unittest
-from rosetta_browser.main import load_plugins, ENGINE_REGISTRY
+
+from rosetta_browser.main import ENGINE_REGISTRY, load_plugins
+
 
 class TestRosettaBrowser(unittest.TestCase):
     def test_plugin_loading(self):
